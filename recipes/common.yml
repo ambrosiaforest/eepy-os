@@ -6,6 +6,12 @@ modules:
     #files:
       #- source: system
         #destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  - type: os-release
+    properties:
+      ID: eepy-os
+      ID_LIKE: fedora
+      NAME: eepy-os
+      PRETTY_NAME: eepy os
 
   - type: dnf
     install:

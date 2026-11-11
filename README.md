@@ -1,8 +1,6 @@
 # eepy-os &nbsp; [![bluebuild build badge](https://github.com/ambrosiaforest/eepy-os/actions/workflows/build.yml/badge.svg)](https://github.com/ambrosiaforest/eepy-os/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+This is my little OS thats built off of secureblue. I originally created this because secureblue deprecated their zfs images and I need zfs for my server. However I'm still exactly learning bluebuild so I don't have working zfs images yet. Instead enjoy these images that include and remove some packages I need or don't need.
 
 ## Installation
 
@@ -39,5 +37,5 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/ambrosiaforest/eepy-os
+cosign verify --key cosign.pub ghcr.io/ambrosiaforest/eepy-os-{image}
 ```
